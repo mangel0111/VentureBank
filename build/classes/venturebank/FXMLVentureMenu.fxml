@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root prefHeight="196.0" prefWidth="240.0" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button fx:id="uxbtnMovimientos" layoutX="39.0" layoutY="56.0" mnemonicParsing="false" text="Movimientos por Cuenta" />
+      <Button fx:id="uxbtnDetalles" layoutX="79.0" layoutY="128.0" mnemonicParsing="false" text="Estasdisticas" />
+      <Label layoutX="90.0" layoutY="22.0" text="Archivos" />
+      <Label layoutX="92.0" layoutY="105.0" text="Reporte" />
+      <Separator layoutX="14.0" layoutY="97.0" prefWidth="200.0" />
+   </children>
+</fx:root>

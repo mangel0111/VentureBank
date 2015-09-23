@@ -1,0 +1,264 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 09/09/2014, 03:47:11 PM
+    Author     : S-DATALAING
+*/
+
+* {
+    -fx-mainDarkColor: #22313F;
+    -fx-lightForeground: #F2F1EF;
+    -fx-mainBlueColor: #2672EC;
+
+}
+
+.main-view-pane {
+    -fx-background-color: #F9F9F9;
+  //  -fx-background-color: #FFFFFF;
+}
+
+.alert-pane {
+    -fx-background-color: #FFFFFF;
+}
+
+.alert-background-pane {
+    -fx-background-color: rgba(64, 64, 64, 0.85);
+}
+
+.mainFxmlClass {
+    -fx-pref-width: 1024;
+    -fx-pref-height: 600;
+
+}
+
+anchorPane{
+    /*-fx-background-color: white;*/
+}
+
+.textFieldResaltado {
+    -fx-background-color: #fffdce;
+}
+
+.statusBar .label{
+    -fx-text-fill: white;
+}
+
+.titlePane{
+    -fx-pref-height: 55px;
+    -fx-border-width: 0px 0px 5px 0px;
+    -fx-border-color: #2672EC;
+    -fx-background-color: white;
+}
+
+.titlePane .button{
+    -fx-pref-width: 70px;
+}
+
+.hojaApu {
+    -fx-background-color: white;
+    -fx-border-color: black;
+    -fx-border-width: 1;
+}
+
+.statusBar{
+    -fx-background-color: #252526;
+}
+
+.filterPane {
+    -fx-background-color: #2D2D30;
+}
+
+.filterPane .label {
+    -fx-text-fill: #DEDEDE;
+}
+
+.list-cell {
+    /*    -fx-background-color: -fx-mainDarkColor;
+        -fx-text-fill: -fx-lightForeground;*/
+}
+
+.list-cell:hover {
+    /*-fx-background-color: -fx-mainBlueColor;*/
+}
+/*
+.list-view-lateral{
+    -fx-background-color: #2D2D30;    
+}
+
+.list-view-lateral:filled:selected:focused, .list-view-lateral:filled:selected {
+    -fx-background-color: #2D2D30;    
+}
+*/
+.list-cell, .vbox-list-cell { 
+    /*    -fx-background-color: transparent;
+        -fx-text-fill: -fx-lightForeground;    */
+}
+.vbox-list-cell-label { 
+    /*-fx-text-fill: -fx-lightForeground;*/    
+}
+
+.filterPane .label{
+    /*-fx-text-fill: white;*/
+}
+
+.labeTitulo{
+    -fx-font-size: 25px;
+    -fx-padding: 0 0 0 10;
+}
+
+.labelSubTitulo{
+    -fx-font-size: 20px;
+    /*-fx-text-fill: #2672EC;*/
+}
+
+.partidaWraper{
+    /*
+    -fx-background-color: white;
+    -fx-border-color: black;
+    -fx-border-width: 1;
+    */
+}
+
+.imageView{
+    -fx-border-color:black; 
+    -fx-border-width: 1; 
+    -fx-border-style: solid;
+}
+
+/*Button Styles*/
+/*
+.button,.split-menu-button{
+    -fx-background-color: #2672EC;
+    -fx-background-radius: 2;
+    -fx-text-fill: white;    
+}
+
+.button:hover, .split-menu-button:hover{
+    -fx-background-color: #2E8DEF;
+    -fx-text-fill: white;    
+}
+
+.button :pressed, .split-menu-button:pressed{
+    -fx-background-color: #2E8DEF;
+    -fx-text-fill: black;    
+}
+.button:disabled, .split-menu-button:disabled{
+    -fx-background-color: #646464;
+}
+*/
+
+/* Selected row */
+.table-view:focused .table-row-cell:filled:focused:selected ,
+.tree-table-view:focused .tree-table-row-cell:filled:focused:selected 
+{
+    -fx-background-color: #2672EC;
+    /*-fx-background-insets: 0, 1, 2;*/
+    -fx-background: -fx-accent;
+    -fx-text-fill: white;
+}
+
+/* Selected row when table not focused */
+.table-row-cell:filled:focused:selected ,
+.tree-table-row-cell:filled:focused:selected {
+    -fx-background-color: #2672EC;
+    /*-fx-background-insets: 0, 1, 2;*/
+    -fx-background: -fx-accent;
+    -fx-text-fill: white;
+}
+
+/* Row hovered */
+.table-view:row-selection .table-row-cell:filled:hover ,
+.tree-table-view:row-selection .tree-table-row-cell:filled:hover {
+    -fx-background-color: #2E8DEF;
+    /*-fx-background-insets: 0, 0 0 1 0;*/
+    -fx-background: -fx-accent;
+    -fx-text-fill: white;
+}
+
+/* Selected row hovered */
+.table-view:focused .table-row-cell:filled:focused:selected:hover ,
+.tree-table-view:focused .tree-table-row-cell:filled:focused:selected:hover {
+    -fx-background-color: #2672EC;
+    /*-fx-background-insets: 0, 1, 2;*/
+    -fx-background: -fx-accent;
+    -fx-text-fill: white;
+}
+
+/* Selected row hovered when table not focused */
+.table-view:row-selection .table-row-cell:filled:focused:hover ,
+.tree-table-view:row-selection .tree-table-row-cell:filled:focused:hover {
+    -fx-background-color: #2672EC;
+    /*-fx-background-insets:0, 0 0 1 0, 1 1 2 1, 2 2 3 2, 3 3 4 3;*/
+    -fx-background: -fx-accent;
+    -fx-text-fill: white;
+}
+
+/* Odds Row  */
+.table-row-cell:odd ,
+.tree-table-row-cell:odd {
+    /*-fx-background-color: #ebebeb;*/
+    -fx-background-color: #e6e6e6;
+    /*-fx-background-insets:0, 0 0 1 0;*/
+}
+
+
+
+
+/* ====== BAR CHART =========================================================== */
+/* TODO flip gradient vertical for negative bars */
+.chart-bar {
+    -fx-bar-fill: #22bad9;
+    -fx-background-color: linear-gradient(derive(-fx-bar-fill,-30.0%), derive(-fx-bar-fill,-40.0%)),
+        linear-gradient(derive(-fx-bar-fill,80.0%), derive(-fx-bar-fill, 0.0%)),
+        linear-gradient(derive(-fx-bar-fill,30.0%), derive(-fx-bar-fill,-10.0%));
+    -fx-background-insets: 0.0,1.0,2.0;
+    -fx-background-radius: 5.0 5.0 0.0 0.0, 4.0 4.0 0.0 0.0, 3.0 3.0 0.0 0.0;
+}
+
+.negative.chart-bar {
+    -fx-background-color: linear-gradient(to top, derive(-fx-bar-fill,-30.0%), derive(-fx-bar-fill,-40.0%)),
+        linear-gradient(to top, derive(-fx-bar-fill, 80.0%), derive(-fx-bar-fill,0.0%)),
+        linear-gradient(to top, derive(-fx-bar-fill,30.0%), derive(-fx-bar-fill,-10.0%));
+    -fx-background-radius: 0.0 0.0 5.0 5.0, 0.0 0.0 4.0 4.0, 0.0 0.0 3.0 3.0;
+}
+.bar-chart:horizontal .chart-bar, .stacked-bar-chart:horizontal .chart-bar {
+    -fx-background-color: linear-gradient(to left, derive(-fx-bar-fill,-30.0%), derive(-fx-bar-fill,-40.0%)),
+        linear-gradient(to left, derive(-fx-bar-fill,80.0%), derive(-fx-bar-fill, 0.0%)),
+        linear-gradient(to left, derive(-fx-bar-fill,30.0%), derive(-fx-bar-fill,-10.0%));
+    -fx-background-radius: 0.0 5.0 5.0 0.0, 0.0 4.0 4.0 0.0, 0.0 3.0 3.0 0.0;
+}
+.bar-chart:horizontal .negative.chart-bar, .stacked-bar-chart:horizontal .negative.chart-bar {
+    -fx-background-color: linear-gradient(to right, derive(-fx-bar-fill,-30.0%), derive(-fx-bar-fill,-40.0%)),
+        linear-gradient(to right, derive(-fx-bar-fill, 80.0%), derive(-fx-bar-fill, 0.0%)),
+        linear-gradient(to right, derive(-fx-bar-fill,30.0%), derive(-fx-bar-fill,-10.0%));
+    -fx-background-radius: 5.0 0.0 0.0 5.0, 4.0 0.0 0.0 4.0, 3.0 0.0 0.0 3.0;
+}
+.default-color0.chart-bar { -fx-bar-fill: #f9d900; }
+.default-color1.chart-bar { -fx-bar-fill: #a9e200; }
+.default-color2.chart-bar { -fx-bar-fill: #22bad9; }
+.default-color3.chart-bar { -fx-bar-fill: #0181e2; }
+.default-color4.chart-bar { -fx-bar-fill: #2f357f; }
+.default-color5.chart-bar { -fx-bar-fill: #860061; }
+.default-color6.chart-bar { -fx-bar-fill: #c62b00; }
+.default-color7.chart-bar { -fx-bar-fill: #ff5700; }
+.bar-legend-symbol {
+    -fx-padding: 8.0px;
+}
+
+.default-color0.chart-bar {
+    -fx-bar-fill: #FFFFFF; 
+    visibility:hidden;
+}
+.default-color1.chart-bar { 
+    -fx-bar-fill: #00FFCC; 
+}
+.onHover{
+    -fx-background-color: ORANGE;
+}
+
+.tab-pane *.tab-header-background {
+     -fx-opacity: 0;
+}
